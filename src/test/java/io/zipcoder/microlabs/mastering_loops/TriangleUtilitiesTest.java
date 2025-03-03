@@ -14,13 +14,14 @@ public class TriangleUtilitiesTest {
         Assert.assertEquals(expected, actual);
     }
 
+    @Test
     public void getRow3() {
         String expected = "***";
         int width = 3;
         String actual = TriangleUtilities.getRow(width);
         Assert.assertEquals(expected, actual);
     }
-
+    @Test
     public void getRow5() {
         String expected = "*****";
         int width = 5;
