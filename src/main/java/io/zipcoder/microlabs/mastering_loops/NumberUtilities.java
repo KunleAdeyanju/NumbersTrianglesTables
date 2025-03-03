@@ -8,15 +8,22 @@ public class NumberUtilities {
     }
 
     public static String getRange(int start, int stop, int step) {
-        return null;
+        StringBuilder sb = new StringBuilder();
+        while( start < stop ){
+            sb.append(start);
+            start = start + step;
+        }
+        return sb.toString();
     }
 
     public static String getRange(int start, int stop) {
-        return null;
+
+        return getRange(start,stop,1);
     }
 
     public static String getRange(int stop) {
-        return null;
+
+        return getRange(0,stop,1);
     }
 
     /*
